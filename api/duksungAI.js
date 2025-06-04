@@ -4,7 +4,7 @@ dotenv.config();
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export default async function handler(req, res) {
-    const allowedOrigin = "https://HeewonJo.github.io"
+    const allowedOrigin = "https://heewonjo.github.io"
     
     res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
     res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
