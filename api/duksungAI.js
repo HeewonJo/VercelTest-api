@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
     const{name, birth} = req.body;
     if(!name || !birth) {
-        return res.status(400).json({error: "이름과 생년월일이 필요합니다."});
+        return res.status(400).json({error: "이름(name)과 생년월일(birth)이 필요합니다."});
     }
     try {
         const today = new Date().toISOString().slice(0, 10);
